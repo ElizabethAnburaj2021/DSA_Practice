@@ -1,4 +1,4 @@
-package Vid2;
+package Week1_Day2;
 
 import org.junit.Test;
 
@@ -17,7 +17,7 @@ public class DiamondPrint_Day2 {
 
 	@Test
 	public void example3() {
-		int n = -5;
+		int n = -1;
 		printDiamond(n);
 	}
 
@@ -78,6 +78,6 @@ public class DiamondPrint_Day2 {
 			System.out.println();
 		}
 		
-	}
+	} 
 
 }

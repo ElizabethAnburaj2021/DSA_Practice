@@ -1,4 +1,4 @@
-package Vid2;
+package Week1_Day2;
 
 import org.junit.Test;
 
@@ -6,7 +6,7 @@ public class LeetCode_258_AddDigit {
 
 	@Test // +ve case
 	public void example() {
-		int num = 12345;
+		int num = 1;
 		findAddedSingleDigitNumber(num);
 		formulaForAddDigit(num);
 	}

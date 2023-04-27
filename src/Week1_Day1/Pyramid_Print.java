@@ -1,4 +1,4 @@
-package Vid2;
+package Week1_Day1;
 
 import org.junit.Test;
 
