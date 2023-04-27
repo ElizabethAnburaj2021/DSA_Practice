@@ -5,7 +5,7 @@ import org.junit.Test;
 public class SandglassPattern {
 	@Test
 	public void example() {
-		int n=5;
+		int n=7;
 		sandGlass(n);
 	}
 	@Test
