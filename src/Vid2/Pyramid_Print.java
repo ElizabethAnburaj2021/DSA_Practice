@@ -18,7 +18,7 @@ public class Pyramid_Print {
 	
 	@Test
 	public void example3() {
-		int n=-5;
+	int n=-5;
 		findPyramid(n);
 	}
 	
@@ -29,7 +29,7 @@ public class Pyramid_Print {
 	 * -> Outer loop-> create for loop to handle the no of rows of nth time
 	 * -> Inner Loop-> create for loop to handle the space(Value changed the based on the input so n-i times. post decrement the j)
 	 * -> If the condition is true then print space else come out of the loop
-	 * -> Inner Loop -> create for loop to handle the star print. k should be <=0.
+	 * -> Inner Loop -> create for loop to handle the star print. k should be <=i.
 	 * -> Print *
 	 * -> print next line for each and every values.
 	 * 
@@ -53,7 +53,7 @@ public class Pyramid_Print {
   
             //  inner loop to handle number of columns
             
-            for (int j=0; j<=i; j++ )
+            for (int k=0; k<=i; k++ )
             {
                 // printing stars
                 System.out.print("* ");
