@@ -8,9 +8,9 @@ public class AddSpecific_index {
 
 	@Test
 	public void example() {
-		int arr[] = { 1, 2, 3, 4, 5 };
-		int noToInsert = 3;
-		int indextoInsertNo = 2;
+		int arr[] = { 1, 2, 4, 5 };
+		int noToInsert = 2;
+		int indextoInsertNo = 3;
 		int[] storeVal = addNoToInsert(arr, noToInsert, indextoInsertNo);
 		System.out.println(Arrays.toString(storeVal));
 	}
@@ -34,18 +34,23 @@ public class AddSpecific_index {
 	}
 
 	// add to the specific index
-	private static int[] addNoToInsert(int a[], int noToInsert, int indextoInsertNo) {
+	private static int[] addNoToInsert(int arr[], int noToInsert, int indextoInsertNo) {
+
 		// create new array with a.length+1
 		int i = 0;
-		int arr1[] = new int[a.length + 1];
+		int arr1[] = new int[arr.length + 1];
 		for (; i < indextoInsertNo; i++) {
-			arr1[i] = a[i];
+			arr1[i] = arr[i];
 		}
 
-		arr1[indextoInsertNo] = noToInsert;
-
-		for (i = indextoInsertNo + 1; i <= a.length; i++) {
-			arr1[i] = a[i - 1];
+		// add the valueToInsert in the specified index
+		for (int j = 0; j < arr.length; j++) {
+			if (j == indextoInsertNo)
+				arr1[indextoInsertNo] = noToInsert;
+		}
+		// print the remaining values in array 2
+		for (int k = indextoInsertNo; k < arr.length; k++) {
+			arr1[k + 1] = arr[k];
 		}
 		return arr1;
 	}
