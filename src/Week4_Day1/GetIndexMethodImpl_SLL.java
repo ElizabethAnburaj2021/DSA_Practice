@@ -15,9 +15,10 @@ public class GetIndexMethodImpl_SLL {
 
 	public class Node {
 		int data;
-		Node next;
+		public Node next;
+		
 
-		Node(int key) {
+		public Node(int key) {
 			this.data = key;
 			next = null;
 		}
