@@ -18,7 +18,7 @@ pseudo code:
 1. Declare a variable to store sum of the values.
 2. Declare the start as 0 and end as matrix length-1 variables to traverse the matrix.
 3. Traverse the loop from 0 to matrix length
-4. Add matrix of start and mat of end and store into sum and increament sum. i.e. sum+=mat[i][start]+mat[i][end] 
+4. Add matrix of start and mat of end and store into sum and increment sum. i.e. sum+=mat[i][start]+mat[i][end] 
 5. Increment the start and decrement the end
 6. if the start and end is equal. i.e the mid point as odd then decrease the sum equal to mat[i][start]	 
 7. Finally return sum. 
