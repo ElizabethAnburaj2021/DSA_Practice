@@ -29,7 +29,7 @@ public void example() {
 	diagonalSum(mat);
 }
 private int diagonalSum(int[][] mat) {
-	int sum=0,start=0,end=mat.length-1;
+	int sum=0,start=0,end =mat.length-1;
 	for(int i=0;i<mat.length;i++) {
 		if(start==end)sum-=mat[i][start];
 		sum+=mat[i][start]+mat[i][end];

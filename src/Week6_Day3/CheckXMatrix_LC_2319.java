@@ -30,21 +30,14 @@ Thus, grid is an X-Matrix.
 	
 	@Test
 	public void example() {
-		int grid[][]=new int[4][4];
-		grid[0][0]=2; grid[1][0]=0; grid[2][0]=0; grid[3][0]=4;
-		grid[0][1]=0; grid[1][1]=3; grid[2][1]=5; grid[3][1]=0;
-		grid[0][2]=0; grid[1][2]=1; grid[2][2]=2; grid[3][2]=0;
-		grid[0][3]=1; grid[1][3]=0; grid[2][3]=0; grid[3][3]=2;
-		//output=true. -->doubt to ask lakshmi actual output is false
+		int[][] grid = { { 2,0,0,1 }, {0,3,1,0},{ 0,5,2,0 }, { 4,0,0,2 } };
+		//output=true. 
 		//[2,0,0,1],[0,3,1,0],[0,5,2,0],[4,0,0,2]
 		System.out.println(checkXMatrix(grid));
 	}
 	@Test
 	public void example1() {
-		int grid[][]=new int[3][3];
-		grid[0][0]=5; grid[1][0]=0; grid[2][0]=0; 
-		grid[0][1]=7; grid[1][1]=3; grid[2][1]=5; 
-		grid[0][2]=0; grid[1][2]=1; grid[2][2]=0; 
+		int[][] grid = { { 5,7,0 }, {0,3,1},{ 0,5,0 } };
 		
 		//output=false.
 		//[5,7,0],[0,3,1],[0,5,0]
@@ -58,11 +51,6 @@ private boolean checkXMatrix(int[][] grid) {
 			if(isDiagonal(i, j, n)) {
 				if(grid[i][j]==0) {
 					return false;
-				}
-				else {
-					if(grid[i][j]!=0) {
-						return false;
-					}
 				}
 			}
 		}
