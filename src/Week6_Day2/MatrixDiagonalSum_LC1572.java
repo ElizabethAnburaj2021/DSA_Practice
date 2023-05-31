@@ -25,7 +25,7 @@ pseudo code:
 */
 @Test
 public void example() {
-	int[][] mat=new int[3][3];
+	int[][] mat = { { 1,2,3 }, {4,5,6},{ 7,8,9 } };
 	diagonalSum(mat);
 }
 private int diagonalSum(int[][] mat) {
