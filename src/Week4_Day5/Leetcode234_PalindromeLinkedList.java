@@ -21,20 +21,20 @@ class ListNode {
  * 2. Use two pointers, a slow pointer and a fast pointer, to find the middle of the linked list.
  * 3. Reverse the second half of the linked list starting from the middle node.
  * 4. Compare the values of the first half (from the start to the middle) with the reversed second half (from the middle to the end).
- * 5. If all the values match, the linked list is a palindrome. Otherwise, it is not.
+ * 5. If all the values match, the linked list is a Palindrome. Otherwise, it is not.
  */
 public class Leetcode234_PalindromeLinkedList {
 	@Test
-	public void example() {
+	public void example() {//1,2,2,1
 		ListNode node=addNode(1);
 		node.next=addNode(2);
 		node.next.next= addNode(2);
-		node.next.next= addNode(1);
+		node.next.next.next= addNode(1);
 		System.out.println(isPalindrome(node));
 		
 	}
 	@Test
-	public void example1() {
+	public void example1() {//1,2,2
 		ListNode node=addNode(1);
 		node.next=addNode(2);
 		node.next.next= addNode(2);
